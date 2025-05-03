@@ -2,87 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Roland | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Model Platform</title>
+ <!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+ 
+  </style>
 </head>
 <body>
   <header>
-    <a href="#" class="logo">Roland</a>
+    <div class="logo">DGREAT MODELS</div>
     <nav>
-      <a href="#" class="active">Home</a>
-      <a href="#">Service</a>
-      <a href="#">Skills</a>
-      <a href="#">Education</a>
-      <a href="#">Experience</a>
-      <a href="#">Contact</a>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="https://models.com/search/model">Models</a>
+    <a href="mailto:rolandalexander1201@gmail.com" class="view-more-btn">Contact Us</a>
+      <a href="#">Sign Up</a>
     </nav>
   </header>
 
-<video autoplay muted loop id="bg-video">
-  <source src="video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-  <section class="home">
-    <div class="home-img" data-aos="fade-right">
-      <img src="images/download.jpg" alt="Roland" />
-    </div>
-    <div class="home-content" data-aos="fade-up">
-      <h1 class="typing" id="typing-title"></h1>
-      <h3 class="typing" id="typing-subtitle"></h3>
-      <p>
-        I craft sleek, responsive websites that blend design and functionality. With a passion for clean code and cutting-edge tech, I turn ideas into immersive digital experiences. Let’s build something exceptional.
-      </p>
-       <div class="social-icons">
-        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-        <a href="https://github.com/SungXjinwoo"><i class="fab fa-github"></i></a>
-        <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
-        <a href="https://web.facebook.com/home?_rdc=1&_rdr#"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-    <a href="https://www.pinterest.com" target="_blank" class="view-more-btn">View More</a>
-    <a href="mailto:rolandalexander1201@gmail.com" class="view-more-btn">Message Me</a>
-
+  <section class="hero">
+    <h1>EXPLORE AMAZING DESIGN</h1>
+    <p>Redefining creativity, productivity, and human interaction through the power of artificial intelligence.</p>
+    <button> <a href="https://www.vogue.com/fashion-shows">EXPLORE</a></button>
   </section>
-  <script>
-    const title = "Hi, It's Roland";
-    const subtitle = "WELCOME TO MY WEBSITE";
+
+  <section class="cards">
+    <div class="card">
+      <img src="images/img (1).jpeg" alt="Model 1" />
+      <h3>Global Impact </h3>
+      <p>Trained to understand cultural and global dynamics for enhanced worldwide application.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/img (13).jpeg" alt="Model 2" />
+      <h3>Custom Solutions</h3>
+      <p>Adaptive architectures built for real-world business efficiency and scale.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/img (3).jpeg" alt="Model 3" />
+      <h3>Visionary Model Suite</h3>
+      <p>Our most advanced multimodal system — vision, text, speech, and reasoning in one core.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/img (4).jpeg" alt="Model 3" />
+      <h3>Visionary Model Suite</h3>
+      <p>Our most advanced multimodal system — vision, text, speech, and reasoning in one core.</p>
+    </div>
+       
+    <div class="card">
+      <img src="images/img (5).jpeg" alt="Model 3" />
+      <h3>Visionary Model Suite</h3>
+      <p>Our most advanced multimodal system — vision, text, speech, and reasoning in one core.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/img (6).jpeg" alt="Model 3" />
+      <h3>Visionary Model Suite</h3>
+      <p>Our most advanced multimodal system — vision, text, speech, and reasoning in one core.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/img (14).jpeg" alt="Model 3" />
+      <h3>Visionary Model Suite</h3>
+      <p>Our most advanced multimodal system — vision, text, speech, and reasoning in one core.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/img (9).jpeg" alt="Model 3" />
+      <h3>Visionary Model Suite</h3>
+      <p>Our most advanced multimodal system — vision, text, speech, and reasoning in one core.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/img (10).jpeg" alt="Model 3" />
+      <h3>Visionary Model Suite</h3>
+      <p>Our most advanced multimodal system — vision, text, speech, and reasoning in one core.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/img (11).jpeg" alt="Model 3" />
+      <h3>Visionary Model Suite</h3>
+      <p>Our most advanced multimodal system — vision, text, speech, and reasoning in one core.</p>
+    </div>
     
-    let index1 = 0;
-    let index2 = 0;
-  
-    function typeTitle() {
-      document.getElementById("typing-title").textContent = title.slice(0, index1++);
-      if (index1 <= title.length) {
-        setTimeout(typeTitle, 100);
-      } else {
-        index1 = 0;
-        setTimeout(typeTitle, 2500);
-      }
-    }
-  
-    function typeSubtitle() {
-      document.getElementById("typing-subtitle").textContent = subtitle.slice(0, index2++);
-      if (index2 <= subtitle.length) {
-        setTimeout(typeSubtitle, 100);
-      } else {
-        index2 = 0;
-        setTimeout(typeSubtitle, 2500);
-      }
-    }
-  
-    typeTitle();
-    typeSubtitle();
-  </script>
+  </section>
+  <div class="social-icons">
+    <a href="https://facebook.com" target="_blank" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com" target="_blank" class="icon twitter"><i class="fab fa-twitter"></i></a>
+  </div>
   
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <div id="particles-js"></div>
+  
+    
   <script>
-    AOS.init();
+    const images = ['image1.jpeg', 'image2.jpeg'];
+    let index = 0;
+    setInterval(() => {
+      index = (index + 1) % images.length;
+      document.body.style.backgroundImage = `url('${images[index]}')`;
+    }, 5000);
   </script>
+  <script src="script.js"></script>
 </body>
 </html>
